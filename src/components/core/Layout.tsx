@@ -12,7 +12,9 @@ const Layout:FC<Props> = ({children,title,subTitle}) => {
         <div>
             <Navigation/>
             <PageHeader className = "jumbotron" title={title} subTitle={subTitle}></PageHeader>
-            {children}
+            <div className="layout">
+                {children}
+            </div>
         </div>
     )
 }
